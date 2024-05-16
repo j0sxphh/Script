@@ -1,0 +1,176 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Pop it trading", "Synapse")
+
+
+-- MAIN
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Buy OffsaleItems")
+
+
+MainSection:NewButton("Buy Dart", "Makes you buy a dart!", function()
+    local args = {
+    [1] = "Dart"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+MainSection:NewButton("Buys Rainbow Star", "ButtonInfo", function()
+    local args = {
+    [1] = "Rainbow Star"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+MainSection:NewButton("Buy Retro Bike", "Buy A retro bike", function()
+    local args = {
+    [1] = "Retro Bike"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Buy Demigaga", "Buys the demigaga", function()
+    local args = {
+    [1] = "Demogorgan"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+
+end)
+
+MainSection:NewButton("Buy GreenOoze", "Buys A green ooze", function()
+    local args = {
+    [1] = "Green Ooze"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+local Place = Main:NewSection("Robux Items")
+
+Place:NewButton("Buy Rainbow Hand", "Buys the item", function()
+    local args = {
+    [1] = "Hand Rainbow"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Place:NewButton("Buy Toy Harambe", "ButtonInfo", function()
+    local args = {
+    [1] = "Box Toy Harambe"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Place:NewButton("Buy F", "ButtonInfo", function()
+    local args = {
+    [1] = "F"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+Place:NewButton("Buy HeartLightStick", "ButtonInfo", function()
+    local args = {
+    [1] = "Heart Lightstick"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+-- Auto Buy
+local AutoBuy = Window:NewTab("Auto Buy")
+local AutoBuySection = AutoBuy:NewSection("AutoBuy")
+
+AutoBuySection:NewButton("Auto Buy Dart (Buggy)", "Cant turn off soz:)", function()
+    while wait()do
+local args = {
+    [1] = "Dart"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end
+end)
+
+
+AutoBuySection:NewButton("Auto Buy Demigaga (Buggy)", "Cant turn off soz.", function()
+    while wait()do
+local args = {
+    [1] = "Demogorgan"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end
+end)
+
+AutoBuySection:NewButton("Auto Buy F (Buggy)", "Cant turn off soz", function()
+
+while wait()do
+
+local args = {
+    [1] = "F"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end
+end)
+
+
+
+AutoBuySection:NewButton("Auto Buy Harambe (Buggy)", "ButtonInfo", function()
+    while wait()do
+
+local args = {
+    [1] = "Box Toy Harambe"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end
+end)
+
+
+AutoBuySection:NewButton("Auto Buy Heart Lightstick", "ButtonInfo", function()
+    while wait()do
+
+local args = {
+    [1] = "Heart Lightstick"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end
+end)
+
+
+AutoBuySection:NewButton("Auto Buy Rainbow Hand", "ButtonInfo", function()
+    while wait ()do
+
+local args = {
+    [1] = "Hand Rainbow"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
